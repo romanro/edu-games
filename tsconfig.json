@@ -1,6 +1,28 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
+  "directive-selector": [
+    true,
+    "attribute",
+    [
+      "edugames",
+      "utils",
+      "ui",
+      "games"
+    ],
+    "camelCase"
+  ],
+  "component-selector": [
+    true,
+    "element",
+    [
+      "edugames",
+      "utils",
+      "ui",
+      "games"
+    ],
+    "kebab-case"
+  ],
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
@@ -23,7 +45,18 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@utils/*": [
+        "src/app/common/utils/*"
+      ],
+      "@ui/*": [
+        "src/app/common/ui/*"
+      ],
+      "@games/*": [
+        "src/app/games/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
