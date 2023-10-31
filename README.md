@@ -1,6 +1,9 @@
-# EduGames
+# Educational Games Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
+Node version 16.14.0
+
+I started this project to improve my personal skills in small games development.
 
 ## Development server
 
