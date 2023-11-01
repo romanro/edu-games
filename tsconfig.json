@@ -47,6 +47,9 @@
       "dom"
     ],
     "paths": {
+      "@canvas/*": [
+        "src/app/common/canvas/*"
+      ],
       "@utils/*": [
         "src/app/common/utils/*"
       ],
