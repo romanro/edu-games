@@ -1,7 +1,10 @@
 <canvas
+  #canvas
   [id]="mergedSettings.id"
   [width]="mergedSettings.width"
   [height]="mergedSettings.height"
   [ngClass]="['canvas', mergedSettings.classList ?? '']"
   [style]="mergedSettings.style ?? {}"
-></canvas>
+>
+  <ng-content></ng-content>
+</canvas>
